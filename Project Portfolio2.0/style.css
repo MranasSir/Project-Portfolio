@@ -1,0 +1,360 @@
+body {
+    background-color: #f3e8ff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-decoration-color: #f3e8ff;
+}
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8b5cf6;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #5a2dc7;
+}
+.Hero {
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 80px 1px; /* meer ruimte */
+    width: 15cm;
+    max-width: 1000px;  /* voor andere schermen */
+    margin: 40px auto;  /* centreert de hero horizontaal en geeft ruimte erboven en onder */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* soepele overgang voor hover effect */
+}
+.Hero img {
+    border-radius: 8px;
+    width: 300px;  
+  height: auto;
+}
+.Hero:hover {
+  transform: scale(1.05); /* iets omhoog bij hover */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08); /*  shadow vergroot */
+}
+section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+
+}
+.wrap{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.wrap:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+#overmij {
+    position:relative;
+    top: 100px;
+    left: -300px;
+    width: 15cm;
+}
+#projecten {
+    position:relative;
+    top: -13cm;
+    left: 10cm;
+    width: 10cm;
+}
+ #overmij img{
+    border-radius: 8px;
+    width: 500px;  
+    height: auto;  
+}
+.button {
+    display: inline-block;
+    padding: 10px 25px;             /* hoogte en breedte */
+    background-color: #8b5cf6;      /* lichtpaars, past bij je thema */
+    color: #ffffff;                 /* witte tekst */
+    text-decoration: none;           /* geen underline */
+    border-radius: 8px;              /* afgeronde hoeken */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #5a2dc7;       /* donkerder paars bij hover */
+    transform: translateY(-5px);     /* kleine lift bij hover */
+}
+#mister{
+    position: relative;
+    top: 10px;
+    left: -8cm;
+    width: 10cm;
+    height: 6cm;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#mister:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.abstract{
+    width: 530px;
+    height: auto;
+    position: relative;
+    left: 8cm;
+    top: -7cm;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.abstract:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.abstract img{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.games{
+    width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.games:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.roblox{
+    width: 520px;
+    height: auto;
+    position: relative;
+    left: -10cm;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.roblox img{
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.roblox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.minecraft{
+    width: 520px;
+    height: auto;
+    position: relative;
+    left: 9cm;
+    top: -325px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.minecraft img{
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.minecraft:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.minecroft{
+    width: 430px;
+    height: auto;
+}
+.roblox-info{
+    position: relative;
+    left: -10cm;
+    top: -300px;
+    width: 520px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.roblox-info:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.minecraft-info{
+    position: relative;
+    left: 9cm;
+    top: -560px;
+    width: 520px;
+    height: 185px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.minecraft-info:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+    
+}
+.portfolio{
+    text-align: left;
+    position: relative;
+    left: -8cm;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.portfolio:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.purple-mobile{
+width: 400px;
+position: relative;
+left: 12cm;
+top: -8cm;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.purple-mobile:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.purple-mobile img{
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.werken{
+    position: relative;
+    top: 0cm;
+    left: -14cm;
+    width: 10cm;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.werken:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.locatie{
+    position: relative;
+    top: -9cm;
+    left: 7cm;
+    width: 20cm;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.locatie:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.locatie img{
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.werk{
+    position: relative;
+    top: -11cm;
+    left: 10cm;
+    width: 10cm;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.werk:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+#ervaring{
+    width: 400px;
+    position: relative;
+    top: -13cm;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#ervaring:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.newyork{
+    width: 400px;
+    position: relative;
+    top: -8cm;
+    left: -8cm;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.newyork:hover{
+    transform: scale(1.20);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.dirk{
+    width: 400px;
+    position: relative;
+    top: -580px;
+    left: 8cm;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dirk:hover{
+    transform: scale(1.20);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* vult de hele beschikbare breedte */
+  padding: 12px 15px; /* binnenruimte in de velden */
+  margin-bottom: 10px; /* ruimte tussen velden */
+  border: 1px solid #ccc; /* grijze rand */
+  border-radius: 6px; /* ronde hoeken */
+  font-size: 14px; /* lettergrootte */
+  transition: border-color 0.3s, box-shadow 0.3s; /* mooie hover/active overgang */
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007BFF; /* blauwe rand */
+  box-shadow: 0 0 5px rgba(0,123,255,0.5); /* lichte schaduw */
+  outline: none; /* default browser focus outline weg */
+}
+.contact-form button {
+  width: 100%; /* vult de breedte */
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007BFF; /* knop kleur */
+  color: #fff; /* tekstkleur */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-form button:hover {
+  background-color: #0056b3; 
+}
+.werken{
+    height: 10cm;
+    padding-right: 2cm;
+    position: relative;
+    top: 3cm;
+    left: -13cm;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: #8b5cf6;
+    font-weight: 500;
+    border-top: 2px solid #f3e8ff;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+
+ 
+
+
