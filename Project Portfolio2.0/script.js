@@ -62,3 +62,45 @@ document.addEventListener("DOMContentLoaded", () => {
     acceptBtn.addEventListener("click", closePopup);
     declineBtn.addEventListener("click", closePopup);
 });
+//===========================================
+// GREETING BASED ON TIME OF DAY
+//===============================
+const now = new Date(); // haalt de huidige datum en tijd op
+const hours = now.getHours(); // haalt het uur op (0-23)
+let greeting = "";
+
+if (hours >= 6 && hours < 12) {
+    greeting = "goede morgen!";
+}
+else if (hours >= 12 && hours < 18) {
+    greeting = "goede middag!";
+}
+else if (hours >= 18 && hours < 22) {
+    greeting = "goede avond!";
+}
+else {
+    greeting = "goede nacht!";
+}
+
+console.log(greeting);
+
+// eerst het element pakken
+const groetElement = document.getElementById("groet");
+
+// daarna de tekst erin zetten
+groetElement.textContent = greeting;
+
+// fade out na 3 seconden
+setTimeout(() => {
+  groetElement.classList.add("fade-out");
+}, 3000);
+
+//===========================================
+// HAMBURGER MENU 
+//===============================
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});

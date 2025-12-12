@@ -49,6 +49,87 @@ body.dark-mode nav ul li a{
 nav ul li a:hover {
     color: #5a2dc7;
 }
+/* Hamburger icoon zichtbaar op mobiel */
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  margin: 15px 30px;
+}
+
+/* Menu standaard verborgen op mobiel */
+nav ul.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Menu zichtbaar wanneer active class wordt toegevoegd */
+nav ul.menu.active {
+  display: flex;
+}
+
+/* Grote schermen: oude desktop-layout behouden */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; /* hamburger weg op desktop */
+  }
+
+  nav ul.menu {
+    display: flex !important; /* menu altijd zichtbaar */
+    flex-direction: row;       /* horizontaal */
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  nav ul.menu li {
+    margin-left: 25px; /* zoals je oude CSS */
+  }
+}
+
+/* Springend binnenkomen */
+.jump-in {
+  animation: jumpIn 0.6s ease-out;
+  display: inline-block;
+}
+
+/* Fade-out */
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+/* Keyframes */
+@keyframes jumpIn {
+  0% {
+    transform: scale(0.3) translateY(-50px);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2) translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+#groet {
+    color: #8b5cf6;
+    font-weight: bold;
+}
 .Hero {
     background-color: #ffffff;
     border-radius: 10px;
