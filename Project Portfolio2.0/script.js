@@ -70,16 +70,16 @@ const hours = now.getHours(); // haalt het uur op (0-23)
 let greeting = "";
 
 if (hours >= 6 && hours < 12) {
-    greeting = "goede morgen!";
+    greeting = "Goede morgen!";
 }
 else if (hours >= 12 && hours < 18) {
-    greeting = "goede middag!";
+    greeting = "Goede middag!";
 }
 else if (hours >= 18 && hours < 22) {
-    greeting = "goede avond!";
+    greeting = "Goede avond!";
 }
 else {
-    greeting = "goede nacht!";
+    greeting = "Goede nacht!";
 }
 
 console.log(greeting);
@@ -104,3 +104,20 @@ const menu = document.querySelector('.menu');
 hamburger.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
+
+//============================================
+//COUNTDOWN SCRIPT
+//===============================
+const einddatum = new Date(2026, 0, 1);
+
+setInterval(function() {
+    const nu = new Date();
+    const verschil = einddatum - nu;
+
+    const dagen = Math.floor(verschil / (1000 * 60 * 60 * 24));
+    const uren = Math.floor((verschil % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minuten = Math.floor((verschil % (1000 * 60 * 60)) / (1000 * 60));
+    const seconden = Math.floor((verschil % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").textContent = dagen + "d " + uren + "u " + minuten + "m " + seconden + "s";
+}, 1000);

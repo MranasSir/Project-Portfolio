@@ -130,6 +130,17 @@ nav ul.menu.active {
     color: #8b5cf6;
     font-weight: bold;
 }
+
+#countdown {
+    font-weight: bold;
+    color: #8b5cf6;
+    
+}
+#countsec {
+    margin: 50px;
+    text-align: center;
+    padding: 30px;
+    }
 .Hero {
     background-color: #ffffff;
     border-radius: 10px;
